@@ -14,6 +14,10 @@ class GameScene: SKScene {
     override func didMoveToView(view: SKView) {
         fracNode.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame) + 200)
         self.addChild(fracNode)
+
+        let clock = ClockNode();
+        clock.position = CGPoint(x:CGRectGetMidX(self.frame), y: CGRectGetMaxY(self.frame) - 36)
+        self.addChild(clock)
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {

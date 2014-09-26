@@ -42,8 +42,7 @@ class FractionNode : SKNode
 
     func setRandomValue() {
         mFraction = Fraction.random(100);
-        nLabel.text = String(mFraction.n);
-        dLabel.text = String(mFraction.d);
+        update()
     }
 
     func update() {

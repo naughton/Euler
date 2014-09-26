@@ -18,6 +18,7 @@
 		CDFA156519D5320E00757CB4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CDFA156419D5320E00757CB4 /* .gitignore */; };
 		CDFA156719D537C400757CB4 /* Fraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA156619D537C400757CB4 /* Fraction.swift */; };
 		CDFA156919D537DD00757CB4 /* FractionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA156819D537DD00757CB4 /* FractionNode.swift */; };
+		CDFA156B19D5420400757CB4 /* ClockNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA156A19D5420400757CB4 /* ClockNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		CDFA156419D5320E00757CB4 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		CDFA156619D537C400757CB4 /* Fraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fraction.swift; sourceTree = "<group>"; };
 		CDFA156819D537DD00757CB4 /* FractionNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FractionNode.swift; sourceTree = "<group>"; };
+		CDFA156A19D5420400757CB4 /* ClockNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			children = (
 				CDFA156619D537C400757CB4 /* Fraction.swift */,
 				CDFA156819D537DD00757CB4 /* FractionNode.swift */,
+				CDFA156A19D5420400757CB4 /* ClockNode.swift */,
 				CD8E5B7719D52E8400800572 /* AppDelegate.swift */,
 				CD8E5B7919D52E8400800572 /* GameScene.sks */,
 				CD8E5B7B19D52E8400800572 /* GameScene.swift */,
@@ -229,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDFA156B19D5420400757CB4 /* ClockNode.swift in Sources */,
 				CD8E5B7C19D52E8400800572 /* GameScene.swift in Sources */,
 				CD8E5B7E19D52E8400800572 /* GameViewController.swift in Sources */,
 				CDFA156919D537DD00757CB4 /* FractionNode.swift in Sources */,
