@@ -16,6 +16,8 @@
 		CD8E5B8619D52E8400800572 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD8E5B8419D52E8400800572 /* LaunchScreen.xib */; };
 		CD8E5B9219D52E8400800572 /* EulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8E5B9119D52E8400800572 /* EulerTests.swift */; };
 		CDFA156519D5320E00757CB4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CDFA156419D5320E00757CB4 /* .gitignore */; };
+		CDFA156719D537C400757CB4 /* Fraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA156619D537C400757CB4 /* Fraction.swift */; };
+		CDFA156919D537DD00757CB4 /* FractionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA156819D537DD00757CB4 /* FractionNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		CD8E5B9019D52E8400800572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD8E5B9119D52E8400800572 /* EulerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EulerTests.swift; sourceTree = "<group>"; };
 		CDFA156419D5320E00757CB4 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		CDFA156619D537C400757CB4 /* Fraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fraction.swift; sourceTree = "<group>"; };
+		CDFA156819D537DD00757CB4 /* FractionNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FractionNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 		CD8E5B7419D52E8400800572 /* Euler */ = {
 			isa = PBXGroup;
 			children = (
+				CDFA156619D537C400757CB4 /* Fraction.swift */,
+				CDFA156819D537DD00757CB4 /* FractionNode.swift */,
 				CD8E5B7719D52E8400800572 /* AppDelegate.swift */,
 				CD8E5B7919D52E8400800572 /* GameScene.sks */,
 				CD8E5B7B19D52E8400800572 /* GameScene.swift */,
@@ -225,7 +231,9 @@
 			files = (
 				CD8E5B7C19D52E8400800572 /* GameScene.swift in Sources */,
 				CD8E5B7E19D52E8400800572 /* GameViewController.swift in Sources */,
+				CDFA156919D537DD00757CB4 /* FractionNode.swift in Sources */,
 				CD8E5B7819D52E8400800572 /* AppDelegate.swift in Sources */,
+				CDFA156719D537C400757CB4 /* Fraction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
