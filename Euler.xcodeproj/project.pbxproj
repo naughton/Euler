@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD8E5B7819D52E8400800572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8E5B7719D52E8400800572 /* AppDelegate.swift */; };
+		CD8E5B7A19D52E8400800572 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CD8E5B7919D52E8400800572 /* GameScene.sks */; };
+		CD8E5B7C19D52E8400800572 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8E5B7B19D52E8400800572 /* GameScene.swift */; };
+		CD8E5B7E19D52E8400800572 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8E5B7D19D52E8400800572 /* GameViewController.swift */; };
+		CD8E5B8119D52E8400800572 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8E5B7F19D52E8400800572 /* Main.storyboard */; };
+		CD8E5B8319D52E8400800572 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8E5B8219D52E8400800572 /* Images.xcassets */; };
+		CD8E5B8619D52E8400800572 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD8E5B8419D52E8400800572 /* LaunchScreen.xib */; };
+		CD8E5B9219D52E8400800572 /* EulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8E5B9119D52E8400800572 /* EulerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD8E5B8C19D52E8400800572 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD8E5B6A19D52E8400800572 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD8E5B7119D52E8400800572;
+			remoteInfo = Euler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD8E5B7219D52E8400800572 /* Euler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Euler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD8E5B7619D52E8400800572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD8E5B7719D52E8400800572 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD8E5B7919D52E8400800572 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		CD8E5B7B19D52E8400800572 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		CD8E5B7D19D52E8400800572 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		CD8E5B8019D52E8400800572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD8E5B8219D52E8400800572 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CD8E5B8519D52E8400800572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CD8E5B8B19D52E8400800572 /* EulerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EulerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD8E5B9019D52E8400800572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD8E5B9119D52E8400800572 /* EulerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EulerTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD8E5B6F19D52E8400800572 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8E5B8819D52E8400800572 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD8E5B6919D52E8400800572 = {
+			isa = PBXGroup;
+			children = (
+				CD8E5B7419D52E8400800572 /* Euler */,
+				CD8E5B8E19D52E8400800572 /* EulerTests */,
+				CD8E5B7319D52E8400800572 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD8E5B7319D52E8400800572 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD8E5B7219D52E8400800572 /* Euler.app */,
+				CD8E5B8B19D52E8400800572 /* EulerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD8E5B7419D52E8400800572 /* Euler */ = {
+			isa = PBXGroup;
+			children = (
+				CD8E5B7719D52E8400800572 /* AppDelegate.swift */,
+				CD8E5B7919D52E8400800572 /* GameScene.sks */,
+				CD8E5B7B19D52E8400800572 /* GameScene.swift */,
+				CD8E5B7D19D52E8400800572 /* GameViewController.swift */,
+				CD8E5B7F19D52E8400800572 /* Main.storyboard */,
+				CD8E5B8219D52E8400800572 /* Images.xcassets */,
+				CD8E5B8419D52E8400800572 /* LaunchScreen.xib */,
+				CD8E5B7519D52E8400800572 /* Supporting Files */,
+			);
+			path = Euler;
+			sourceTree = "<group>";
+		};
+		CD8E5B7519D52E8400800572 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD8E5B7619D52E8400800572 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD8E5B8E19D52E8400800572 /* EulerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD8E5B9119D52E8400800572 /* EulerTests.swift */,
+				CD8E5B8F19D52E8400800572 /* Supporting Files */,
+			);
+			path = EulerTests;
+			sourceTree = "<group>";
+		};
+		CD8E5B8F19D52E8400800572 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD8E5B9019D52E8400800572 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD8E5B7119D52E8400800572 /* Euler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD8E5B9519D52E8400800572 /* Build configuration list for PBXNativeTarget "Euler" */;
+			buildPhases = (
+				CD8E5B6E19D52E8400800572 /* Sources */,
+				CD8E5B6F19D52E8400800572 /* Frameworks */,
+				CD8E5B7019D52E8400800572 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Euler;
+			productName = Euler;
+			productReference = CD8E5B7219D52E8400800572 /* Euler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD8E5B8A19D52E8400800572 /* EulerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD8E5B9819D52E8400800572 /* Build configuration list for PBXNativeTarget "EulerTests" */;
+			buildPhases = (
+				CD8E5B8719D52E8400800572 /* Sources */,
+				CD8E5B8819D52E8400800572 /* Frameworks */,
+				CD8E5B8919D52E8400800572 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD8E5B8D19D52E8400800572 /* PBXTargetDependency */,
+			);
+			name = EulerTests;
+			productName = EulerTests;
+			productReference = CD8E5B8B19D52E8400800572 /* EulerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD8E5B6A19D52E8400800572 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Orange Banana";
+				TargetAttributes = {
+					CD8E5B7119D52E8400800572 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					CD8E5B8A19D52E8400800572 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = CD8E5B7119D52E8400800572;
+					};
+				};
+			};
+			buildConfigurationList = CD8E5B6D19D52E8400800572 /* Build configuration list for PBXProject "Euler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD8E5B6919D52E8400800572;
+			productRefGroup = CD8E5B7319D52E8400800572 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD8E5B7119D52E8400800572 /* Euler */,
+				CD8E5B8A19D52E8400800572 /* EulerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD8E5B7019D52E8400800572 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8E5B8619D52E8400800572 /* LaunchScreen.xib in Resources */,
+				CD8E5B8319D52E8400800572 /* Images.xcassets in Resources */,
+				CD8E5B7A19D52E8400800572 /* GameScene.sks in Resources */,
+				CD8E5B8119D52E8400800572 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8E5B8919D52E8400800572 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD8E5B6E19D52E8400800572 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8E5B7C19D52E8400800572 /* GameScene.swift in Sources */,
+				CD8E5B7E19D52E8400800572 /* GameViewController.swift in Sources */,
+				CD8E5B7819D52E8400800572 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8E5B8719D52E8400800572 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8E5B9219D52E8400800572 /* EulerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD8E5B8D19D52E8400800572 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD8E5B7119D52E8400800572 /* Euler */;
+			targetProxy = CD8E5B8C19D52E8400800572 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD8E5B7F19D52E8400800572 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD8E5B8019D52E8400800572 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD8E5B8419D52E8400800572 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD8E5B8519D52E8400800572 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD8E5B9319D52E8400800572 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD8E5B9419D52E8400800572 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD8E5B9619D52E8400800572 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Euler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD8E5B9719D52E8400800572 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Euler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CD8E5B9919D52E8400800572 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EulerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Euler.app/Euler";
+			};
+			name = Debug;
+		};
+		CD8E5B9A19D52E8400800572 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EulerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Euler.app/Euler";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD8E5B6D19D52E8400800572 /* Build configuration list for PBXProject "Euler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8E5B9319D52E8400800572 /* Debug */,
+				CD8E5B9419D52E8400800572 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD8E5B9519D52E8400800572 /* Build configuration list for PBXNativeTarget "Euler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8E5B9619D52E8400800572 /* Debug */,
+				CD8E5B9719D52E8400800572 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD8E5B9819D52E8400800572 /* Build configuration list for PBXNativeTarget "EulerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8E5B9919D52E8400800572 /* Debug */,
+				CD8E5B9A19D52E8400800572 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD8E5B6A19D52E8400800572 /* Project object */;
+}
