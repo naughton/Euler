@@ -8,6 +8,11 @@
 
 import Foundation
 
+
+public func randomInt(min: Int, max:Int) -> Int {
+    return min + Int(arc4random_uniform(UInt32(max - min + 1)))
+}
+
 public class Fraction {
     var n: Int
     var d: Int
@@ -26,7 +31,7 @@ public class Fraction {
     }
 
     public class func random(n: Int) -> Fraction {
-        return Fraction(n: Int(arc4random()) % n, d: Int(arc4random()) % n);
+        return Fraction(n: randomInt(1, n), d: randomInt(1, n))
     }
 }
 
