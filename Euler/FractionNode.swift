@@ -40,6 +40,12 @@ class FractionNode : SKNode
         fatalError("init(coder:) has not been implemented")
     }
 
+    func setRandomValue() {
+        mFraction = Fraction.random(100);
+        nLabel.text = String(mFraction.n);
+        dLabel.text = String(mFraction.d);
+    }
+
     func update() {
         nLabel.text = String(mFraction.n);
         dLabel.text = String(mFraction.d);
