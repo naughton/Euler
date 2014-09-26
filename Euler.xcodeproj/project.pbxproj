@@ -15,6 +15,7 @@
 		CD8E5B8319D52E8400800572 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8E5B8219D52E8400800572 /* Images.xcassets */; };
 		CD8E5B8619D52E8400800572 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD8E5B8419D52E8400800572 /* LaunchScreen.xib */; };
 		CD8E5B9219D52E8400800572 /* EulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8E5B9119D52E8400800572 /* EulerTests.swift */; };
+		CDFA156519D5320E00757CB4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CDFA156419D5320E00757CB4 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		CD8E5B8B19D52E8400800572 /* EulerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EulerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8E5B9019D52E8400800572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD8E5B9119D52E8400800572 /* EulerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EulerTests.swift; sourceTree = "<group>"; };
+		CDFA156419D5320E00757CB4 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		CD8E5B6919D52E8400800572 = {
 			isa = PBXGroup;
 			children = (
+				CDFA156419D5320E00757CB4 /* .gitignore */,
 				CD8E5B7419D52E8400800572 /* Euler */,
 				CD8E5B8E19D52E8400800572 /* EulerTests */,
 				CD8E5B7319D52E8400800572 /* Products */,
@@ -198,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDFA156519D5320E00757CB4 /* .gitignore in Resources */,
 				CD8E5B8619D52E8400800572 /* LaunchScreen.xib in Resources */,
 				CD8E5B8319D52E8400800572 /* Images.xcassets in Resources */,
 				CD8E5B7A19D52E8400800572 /* GameScene.sks in Resources */,
@@ -415,6 +419,7 @@
 				CD8E5B9719D52E8400800572 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD8E5B9819D52E8400800572 /* Build configuration list for PBXNativeTarget "EulerTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +428,7 @@
 				CD8E5B9A19D52E8400800572 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
