@@ -6,8 +6,11 @@
 //  Copyright (c) 2014 Orange Banana. All rights reserved.
 //
 
-public enum Op {
-    case plus, minus, times, divide
+public enum Op: Character {
+    case plus = "+"
+    case minus = "−"
+    case times = "×"
+    case divide = "÷"
 }
 
 public class Expression {

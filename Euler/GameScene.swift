@@ -9,11 +9,20 @@
 import SpriteKit
 
 class GameScene: SKScene {
-    let fracNode = FractionNode();
+
+    var exprNode: ExpressionNode?
+    var answerNode: FractionNode?
 
     override func didMoveToView(view: SKView) {
-        fracNode.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame) + 200)
-        self.addChild(fracNode)
+
+        var expr = Expression(left: Fraction(n:1, d: 2), op: .plus, right: Fraction(n:1, d: 5))
+        exprNode = ExpressionNode(expression: expr)
+        exprNode!.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
+        self.addChild(exprNode!)
+
+        answerNode = FractionNode(fraction: expr.value());
+        answerNode!.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMinY(self.frame) + 60)
+        self.addChild(answerNode!)
 
         let clock = ClockNode();
         clock.position = CGPoint(x:CGRectGetMidX(self.frame), y: CGRectGetMaxY(self.frame) - 36)
@@ -21,25 +30,16 @@ class GameScene: SKScene {
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        /* Called when a touch begins */
-        fracNode.setRandomValue()
+        var d1 = randomInt(2, 10)
+        var d2 = randomInt(2, 10)
+        var expr = Expression(left: Fraction(n:randomInt(2, d1), d: d1),
+            op: .plus,
+            right: Fraction(n:randomInt(2, d2), d: d2))
+        exprNode!.setExpression(expr)
+        answerNode!.setFraction(expr.value())
         for touch: AnyObject in touches {
             let location = touch.locationInNode(self)
-            fracNode.position = location;
-
-            /*
-            let sprite = SKSpriteNode(imageNamed:"Spaceship")
-            
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            self.addChild(sprite)
-*/
+            exprNode!.position = location;
         }
     }
    

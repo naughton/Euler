@@ -17,10 +17,9 @@ class FractionNode : SKNode
     let size = 64
     let gap = 4
 
-    override init() {
-        let f = Fraction.random(100)
-        nLabel = FractionNode.label("numerator", n:f.n, x:0, y:gap)
-        dLabel = FractionNode.label("denominator", n:f.d, x:0, y:-gap)
+    init(fraction: Fraction) {
+        nLabel = FractionNode.label("numerator", n:fraction.n, x:0, y:gap)
+        dLabel = FractionNode.label("denominator", n:fraction.d, x:0, y:-gap)
         dLabel.position = CGPoint(x:dLabel.position.x, y:dLabel.position.y - dLabel.frame.height)
         var divideLine = SKShapeNode(rectOfSize: CGSize(width: dLabel.frame.size.width + 40,height: 4))
         divideLine.position = CGPointMake(0,0);
@@ -28,7 +27,7 @@ class FractionNode : SKNode
         divideLine.fillColor = divideLine.strokeColor
 
         var s = nLabel.frame
-        mFraction = f
+        mFraction = fraction
         super.init()
         name = "fraction"
         addChild(nLabel)
@@ -48,6 +47,11 @@ class FractionNode : SKNode
     func update() {
         nLabel.text = String(mFraction.n);
         dLabel.text = String(mFraction.d);
+    }
+
+    func setFraction(fraction: Fraction) {
+        mFraction = fraction
+        update()
     }
 
     class func label(name: String, n: Int, x: Int, y: Int) -> SKLabelNode

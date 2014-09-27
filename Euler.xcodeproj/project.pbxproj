@@ -20,6 +20,7 @@
 		CDFA156919D537DD00757CB4 /* FractionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA156819D537DD00757CB4 /* FractionNode.swift */; };
 		CDFA156B19D5420400757CB4 /* ClockNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA156A19D5420400757CB4 /* ClockNode.swift */; };
 		CDFA156D19D6863D00757CB4 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA156C19D6863D00757CB4 /* Expression.swift */; };
+		CDFA156F19D69C5C00757CB4 /* ExpressionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA156E19D69C5C00757CB4 /* ExpressionNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		CDFA156819D537DD00757CB4 /* FractionNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FractionNode.swift; sourceTree = "<group>"; };
 		CDFA156A19D5420400757CB4 /* ClockNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockNode.swift; sourceTree = "<group>"; };
 		CDFA156C19D6863D00757CB4 /* Expression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
+		CDFA156E19D69C5C00757CB4 /* ExpressionNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressionNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				CDFA156619D537C400757CB4 /* Fraction.swift */,
 				CDFA156C19D6863D00757CB4 /* Expression.swift */,
 				CDFA156819D537DD00757CB4 /* FractionNode.swift */,
+				CDFA156E19D69C5C00757CB4 /* ExpressionNode.swift */,
 				CDFA156A19D5420400757CB4 /* ClockNode.swift */,
 				CD8E5B7719D52E8400800572 /* AppDelegate.swift */,
 				CD8E5B7919D52E8400800572 /* GameScene.sks */,
@@ -240,6 +243,7 @@
 				CD8E5B7E19D52E8400800572 /* GameViewController.swift in Sources */,
 				CDFA156919D537DD00757CB4 /* FractionNode.swift in Sources */,
 				CD8E5B7819D52E8400800572 /* AppDelegate.swift in Sources */,
+				CDFA156F19D69C5C00757CB4 /* ExpressionNode.swift in Sources */,
 				CDFA156D19D6863D00757CB4 /* Expression.swift in Sources */,
 				CDFA156719D537C400757CB4 /* Fraction.swift in Sources */,
 			);
