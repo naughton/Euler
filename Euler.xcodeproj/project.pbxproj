@@ -19,6 +19,7 @@
 		CDFA156719D537C400757CB4 /* Fraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA156619D537C400757CB4 /* Fraction.swift */; };
 		CDFA156919D537DD00757CB4 /* FractionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA156819D537DD00757CB4 /* FractionNode.swift */; };
 		CDFA156B19D5420400757CB4 /* ClockNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA156A19D5420400757CB4 /* ClockNode.swift */; };
+		CDFA156D19D6863D00757CB4 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA156C19D6863D00757CB4 /* Expression.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		CDFA156619D537C400757CB4 /* Fraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fraction.swift; sourceTree = "<group>"; };
 		CDFA156819D537DD00757CB4 /* FractionNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FractionNode.swift; sourceTree = "<group>"; };
 		CDFA156A19D5420400757CB4 /* ClockNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockNode.swift; sourceTree = "<group>"; };
+		CDFA156C19D6863D00757CB4 /* Expression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				CDFA156619D537C400757CB4 /* Fraction.swift */,
+				CDFA156C19D6863D00757CB4 /* Expression.swift */,
 				CDFA156819D537DD00757CB4 /* FractionNode.swift */,
 				CDFA156A19D5420400757CB4 /* ClockNode.swift */,
 				CD8E5B7719D52E8400800572 /* AppDelegate.swift */,
@@ -237,6 +240,7 @@
 				CD8E5B7E19D52E8400800572 /* GameViewController.swift in Sources */,
 				CDFA156919D537DD00757CB4 /* FractionNode.swift in Sources */,
 				CD8E5B7819D52E8400800572 /* AppDelegate.swift in Sources */,
+				CDFA156D19D6863D00757CB4 /* Expression.swift in Sources */,
 				CDFA156719D537C400757CB4 /* Fraction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +356,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

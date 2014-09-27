@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Orange Banana. All rights reserved.
 //
 
-import UIKit
 import XCTest
+import Euler
 
 class EulerTests: XCTestCase {
     
@@ -20,12 +20,14 @@ class EulerTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+#if UNITTESTS
+    func testExpr() {
+        let left = Fraction(n:1, d:5)
+        let right = Fraction(n:2, d:3)
+        let expr = Expression(left:left, op:Op.plus, right:right)
+        XCTAssertEqual(expr.value().value(), 1 / 5.0 + 2 / 3.0, "pass")
     }
-    
+#endif
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock() {
