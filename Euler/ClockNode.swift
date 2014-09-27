@@ -27,18 +27,28 @@ class ClockNode : SKNode
         arc.strokeColor = UIColor.orangeColor()
         arc.fillColor = UIColor.clearColor()
 
+        let label = SKLabelNode(fontNamed:"AvenirNext-Heavy")
+        label.text = "10"
+        label.fontColor = UIColor.blackColor()
+        label.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.Center;
+        label.verticalAlignmentMode = SKLabelVerticalAlignmentMode.Center;
+
+
         super.init()
 
         name = "clock"
         addChild(back);
         addChild(arc);
-
-        let action = SKAction.customActionWithDuration(1.0) { node, elapsedTime in
+        addChild(label);
+        let duration = 10.0;
+        let action = SKAction.customActionWithDuration(duration) { node, elapsedTime in
+            let t = Int(CGFloat(duration) - elapsedTime) + 1;
             let path: CGMutablePathRef = CGPathCreateMutable()
             let angle = M_PI_2 - 2.0 * M_PI * Double(elapsedTime)
             CGPathAddArc(path, nil, 0.0, 0.0, 20, CGFloat(angle), CGFloat(M_PI_2), true)
             if let shape = node as? SKShapeNode {
                 shape.path = path;
+                label.text = String(t);
             }
         }
         arc.runAction(SKAction.repeatAction(action, count:10))
