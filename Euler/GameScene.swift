@@ -20,7 +20,7 @@ class GameScene: SKScene {
         exprNode!.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
         self.addChild(exprNode!)
 
-        answerNode = FractionNode(fraction: expr.value());
+        answerNode = FractionNode(fraction: expr.value(), proper: true);
         answerNode!.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMinY(self.frame) + 60)
         self.addChild(answerNode!)
 
@@ -32,9 +32,9 @@ class GameScene: SKScene {
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         var d1 = randomInt(2, 10)
         var d2 = randomInt(2, 10)
-        var expr = Expression(left: Fraction(n:randomInt(2, d1), d: d1),
+        var expr = Expression(left: Fraction(n:randomInt(1, d1), d: d1),
             op: .plus,
-            right: Fraction(n:randomInt(2, d2), d: d2))
+            right: Fraction(n:randomInt(1, d2), d: d2))
         exprNode!.setExpression(expr)
         answerNode!.setFraction(expr.value())
         for touch: AnyObject in touches {

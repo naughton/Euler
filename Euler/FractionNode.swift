@@ -10,59 +10,94 @@ import SpriteKit
 
 class FractionNode : SKNode
 {
-    var mFraction: Fraction
+    var fraction: Fraction
+    var proper: Bool
+
     var nLabel: SKLabelNode
+    var divider: SKSpriteNode
     var dLabel: SKLabelNode
+    var wLabel: SKLabelNode
 
     let size = 64
-    let gap = 4
+    let gap:CGFloat = 4
+    let fontName = "Optima-Bold"
+    let fontSize:CGFloat = 64
+    let fontColor = UIColor.orangeColor()
 
-    init(fraction: Fraction) {
-        nLabel = FractionNode.label("numerator", n:fraction.n, x:0, y:gap)
-        dLabel = FractionNode.label("denominator", n:fraction.d, x:0, y:-gap)
-        dLabel.position = CGPoint(x:dLabel.position.x, y:dLabel.position.y - dLabel.frame.height)
-        var divideLine = SKShapeNode(rectOfSize: CGSize(width: dLabel.frame.size.width + 40,height: 4))
-        divideLine.position = CGPointMake(0,0);
-        divideLine.strokeColor =  UIColor.orangeColor()
-        divideLine.fillColor = divideLine.strokeColor
+    init(fraction: Fraction, proper: Bool = false) {
 
-        var s = nLabel.frame
-        mFraction = fraction
+        self.fraction = fraction
+        self.proper = proper
+
+        nLabel = SKLabelNode(fontNamed:fontName)
+        nLabel.verticalAlignmentMode =  SKLabelVerticalAlignmentMode.Bottom
+        nLabel.fontSize = fontSize
+        nLabel.fontColor = fontColor
+
+        dLabel = SKLabelNode(fontNamed:fontName)
+        dLabel.verticalAlignmentMode =  SKLabelVerticalAlignmentMode.Top
+        dLabel.fontSize = fontSize
+        dLabel.fontColor = fontColor
+
+        wLabel = SKLabelNode(fontNamed:fontName)
+        wLabel.verticalAlignmentMode =  SKLabelVerticalAlignmentMode.Center
+        wLabel.fontSize = fontSize * 2
+        wLabel.fontColor = fontColor
+
+        divider = SKSpriteNode(color: fontColor, size: CGSize(width: 80, height: 4))
+
         super.init()
+
+        update()
+
         name = "fraction"
         addChild(nLabel)
         addChild(dLabel)
-        addChild(divideLine)
-     }
+        addChild(divider)
+        addChild(wLabel)
+    }
 
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func setRandomValue() {
-        mFraction = Fraction.random(100);
-        update()
-    }
-
     func update() {
-        nLabel.text = String(mFraction.n);
-        dLabel.text = String(mFraction.d);
+        if (proper) {
+            if (fraction.mixedPart > 0) {
+                nLabel.text = String(fraction.mixedPart)
+                dLabel.text = String(fraction.d)
+                divider.size.width = max(nLabel.frame.width, dLabel.frame.width)
+                var dx: CGFloat
+                if (fraction.wholePart > 0) {
+                    wLabel.text = String(fraction.wholePart)
+                    dx = divider.size.width / 2
+                } else {
+                    wLabel.text = ""
+                    dx = 0
+                }
+                nLabel.position = CGPoint(x: dx, y: gap)
+                dLabel.position = CGPoint(x: dx, y: -gap)
+                divider.position.x = dx
+                wLabel.position.x = -wLabel.frame.width / 2 - gap
+           } else {
+                wLabel.text = String(fraction.wholePart)
+                nLabel.text = ""
+                dLabel.text = ""
+                divider.size.width = 0
+                wLabel.position.x = 0
+            }
+        } else {
+            wLabel.text = ""
+            nLabel.text = String(fraction.n);
+            nLabel.position = CGPoint(x:0, y:gap)
+            dLabel.text = String(fraction.d);
+            dLabel.position = CGPoint(x:0, y:-gap)
+            divider.size.width = max(nLabel.frame.width, dLabel.frame.width)
+        }
     }
 
     func setFraction(fraction: Fraction) {
-        mFraction = fraction
+        self.fraction = fraction
         update()
     }
-
-    class func label(name: String, n: Int, x: Int, y: Int) -> SKLabelNode
-    {
-        let label = SKLabelNode(fontNamed:"Optima-Bold")
-        label.horizontalAlignmentMode =  SKLabelHorizontalAlignmentMode.Center
-        label.name = name
-        label.text = String(n)
-        label.fontSize = 64
-        label.position = CGPoint(x:x, y: y)
-        return label
-    }
-
 }

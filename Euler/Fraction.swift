@@ -14,24 +14,36 @@ public func randomInt(min: Int, max:Int) -> Int {
 }
 
 public class Fraction {
-    var n: Int
-    var d: Int
+    dynamic var n: Int
+    dynamic var d: Int
 
     public init(n:Int, d:Int) {
         self.n = n
         self.d = d
     }
 
-    public func toString() -> String {
-        return "\(n) / \(d)"
+    public var description: String {
+        return isImproper ? "\(wholePart) \(mixedPart)/\(d)" : "\(n)/\(d)"
     }
 
-    public func value() -> Double {
-        return Double(self.n) / Double(self.d)
+    public var value: Double {
+        get { return Double(n) / Double(d) }
     }
 
-    public class func random(n: Int) -> Fraction {
-        return Fraction(n: randomInt(1, n), d: randomInt(1, n))
+    public var isImproper: Bool {
+        get { return n >= d }
+    }
+
+    public var wholePart: Int {
+        get { return n / d }
+    }
+
+    public var mixedPart: Int {
+        get { return n % d }
+    }
+
+    public func inverse() -> Fraction {
+        return Fraction(n: d, d: n)
     }
 }
 
