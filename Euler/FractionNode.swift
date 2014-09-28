@@ -18,11 +18,10 @@ class FractionNode : SKNode
     var dLabel: SKLabelNode
     var wLabel: SKLabelNode
 
-    let size = 64
-    let gap:CGFloat = 4
     let fontName = "Optima-Bold"
-    let fontSize:CGFloat = 64
-    let fontColor = UIColor.orangeColor()
+    let fontSize:CGFloat = 120
+
+    let color = UIColor.blackColor()
 
     init(fraction: Fraction, proper: Bool = false) {
 
@@ -32,19 +31,19 @@ class FractionNode : SKNode
         nLabel = SKLabelNode(fontNamed:fontName)
         nLabel.verticalAlignmentMode =  SKLabelVerticalAlignmentMode.Bottom
         nLabel.fontSize = fontSize
-        nLabel.fontColor = fontColor
+        nLabel.fontColor = color
 
         dLabel = SKLabelNode(fontNamed:fontName)
         dLabel.verticalAlignmentMode =  SKLabelVerticalAlignmentMode.Top
         dLabel.fontSize = fontSize
-        dLabel.fontColor = fontColor
+        dLabel.fontColor = color
 
         wLabel = SKLabelNode(fontNamed:fontName)
         wLabel.verticalAlignmentMode =  SKLabelVerticalAlignmentMode.Center
         wLabel.fontSize = fontSize * 2
-        wLabel.fontColor = fontColor
+        wLabel.fontColor = color
 
-        divider = SKSpriteNode(color: fontColor, size: CGSize(width: 80, height: 4))
+        divider = SKSpriteNode(color: color, size: CGSize(width: 8, height: 4))
 
         super.init()
 
@@ -62,6 +61,7 @@ class FractionNode : SKNode
     }
 
     func update() {
+        let gap:CGFloat = fontSize/16
         if (proper) {
             if (fraction.mixedPart > 0) {
                 nLabel.text = String(fraction.mixedPart)

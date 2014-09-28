@@ -41,7 +41,7 @@ class EulerTests: XCTestCase {
         let left = Fraction(n:1, d:5)
         let right = Fraction(n:2, d:3)
         let expr = Expression(left:left, op:Op.plus, right:right)
-        XCTAssertEqual(expr.value().value, 1 / 5.0 + 2 / 3.0, "pass")
+        XCTAssertEqual(expr.value.value, 1 / 5.0 + 2 / 3.0, "pass")
     }
 //#endif
     func testPerformanceExample() {

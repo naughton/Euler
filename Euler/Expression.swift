@@ -24,16 +24,18 @@ public class Expression {
         self.right = right
     }
 
-    public func value() -> Fraction {
-        switch (op) {
-        case .plus:
-            return left + right
-        case .minus:
-            return left - right
-        case .times:
-            return left * right
-        case .divide:
-            return left / right
+    public var value: Fraction {
+        get {
+            switch (op) {
+            case .plus:
+                return left + right
+            case .minus:
+                return left - right
+            case .times:
+                return left * right
+            case .divide:
+                return left / right
+            }
         }
     }
 }

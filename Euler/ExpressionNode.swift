@@ -15,9 +15,6 @@ class ExpressionNode : SKNode
     var leftNode: FractionNode
     var rightNode: FractionNode
 
-    let size = 64
-    let gap = 4
-
     init(expression: Expression) {
         mExpression = expression
         opLabel = SKLabelNode(fontNamed:"Optima-Bold")
@@ -25,15 +22,15 @@ class ExpressionNode : SKNode
         opLabel.verticalAlignmentMode =  SKLabelVerticalAlignmentMode.Center
         opLabel.name = "op"
         opLabel.text = String(expression.op.toRaw())
-        opLabel.fontSize = 64
 
-         leftNode = FractionNode(fraction: expression.left)
-        leftNode.position = CGPoint(x: -60, y: 0);
-         rightNode = FractionNode(fraction: expression.right)
-        rightNode.position = CGPoint(x: 60, y: 0);
+        leftNode = FractionNode(fraction: expression.left)
+        rightNode = FractionNode(fraction: expression.right)
+        opLabel.fontSize = rightNode.fontSize
+        opLabel.fontColor = rightNode.color
+
         super.init()
-
-        name = "expression"
+        update()
+        
         addChild(opLabel)
         addChild(leftNode)
         addChild(rightNode)
@@ -47,6 +44,11 @@ class ExpressionNode : SKNode
         opLabel.text = String(mExpression.op.toRaw())
         leftNode.update()
         rightNode.update()
+
+        let gap:CGFloat = 4
+
+        leftNode.position = CGPoint(x: -(opLabel.frame.width + leftNode.calculateAccumulatedFrame().width) / 2.0 - gap, y: 0)
+        rightNode.position = CGPoint(x: (opLabel.frame.width + rightNode.calculateAccumulatedFrame().width) / 2.0 + gap, y: 0)
     }
 
     func setExpression(expr: Expression) {
