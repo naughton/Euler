@@ -23,7 +23,7 @@ public class Fraction {
     }
 
     public var description: String {
-        return isImproper ? "\(wholePart) \(mixedPart)/\(d)" : "\(n)/\(d)"
+        return isImproper ? (mixedPart > 0 ? "\(wholePart) \(mixedPart)/\(d)" : "\(wholePart)") : (d == 1 ? "\(n)" : "\(n)/\(d)")
     }
 
     public var value: Double {

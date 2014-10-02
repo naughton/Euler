@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CD8E5B7819D52E8400800572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8E5B7719D52E8400800572 /* AppDelegate.swift */; };
-		CD8E5B7A19D52E8400800572 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CD8E5B7919D52E8400800572 /* GameScene.sks */; };
 		CD8E5B7C19D52E8400800572 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8E5B7B19D52E8400800572 /* GameScene.swift */; };
 		CD8E5B7E19D52E8400800572 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8E5B7D19D52E8400800572 /* GameViewController.swift */; };
 		CD8E5B8119D52E8400800572 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8E5B7F19D52E8400800572 /* Main.storyboard */; };
@@ -21,6 +20,7 @@
 		CDFA156B19D5420400757CB4 /* ClockNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA156A19D5420400757CB4 /* ClockNode.swift */; };
 		CDFA156D19D6863D00757CB4 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA156C19D6863D00757CB4 /* Expression.swift */; };
 		CDFA156F19D69C5C00757CB4 /* ExpressionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA156E19D69C5C00757CB4 /* ExpressionNode.swift */; };
+		CDFA157119DDBA3A00757CB4 /* AnswerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA157019DDBA3A00757CB4 /* AnswerNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 		CD8E5B7219D52E8400800572 /* Euler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Euler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8E5B7619D52E8400800572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD8E5B7719D52E8400800572 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD8E5B7919D52E8400800572 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		CD8E5B7B19D52E8400800572 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		CD8E5B7D19D52E8400800572 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		CD8E5B8019D52E8400800572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,6 +51,7 @@
 		CDFA156A19D5420400757CB4 /* ClockNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockNode.swift; sourceTree = "<group>"; };
 		CDFA156C19D6863D00757CB4 /* Expression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
 		CDFA156E19D69C5C00757CB4 /* ExpressionNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressionNode.swift; sourceTree = "<group>"; };
+		CDFA157019DDBA3A00757CB4 /* AnswerNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +98,9 @@
 				CDFA156C19D6863D00757CB4 /* Expression.swift */,
 				CDFA156819D537DD00757CB4 /* FractionNode.swift */,
 				CDFA156E19D69C5C00757CB4 /* ExpressionNode.swift */,
+				CDFA157019DDBA3A00757CB4 /* AnswerNode.swift */,
 				CDFA156A19D5420400757CB4 /* ClockNode.swift */,
 				CD8E5B7719D52E8400800572 /* AppDelegate.swift */,
-				CD8E5B7919D52E8400800572 /* GameScene.sks */,
 				CD8E5B7B19D52E8400800572 /* GameScene.swift */,
 				CD8E5B7D19D52E8400800572 /* GameViewController.swift */,
 				CD8E5B7F19D52E8400800572 /* Main.storyboard */,
@@ -219,7 +219,6 @@
 				CDFA156519D5320E00757CB4 /* .gitignore in Resources */,
 				CD8E5B8619D52E8400800572 /* LaunchScreen.xib in Resources */,
 				CD8E5B8319D52E8400800572 /* Images.xcassets in Resources */,
-				CD8E5B7A19D52E8400800572 /* GameScene.sks in Resources */,
 				CD8E5B8119D52E8400800572 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +242,7 @@
 				CD8E5B7E19D52E8400800572 /* GameViewController.swift in Sources */,
 				CDFA156919D537DD00757CB4 /* FractionNode.swift in Sources */,
 				CD8E5B7819D52E8400800572 /* AppDelegate.swift in Sources */,
+				CDFA157119DDBA3A00757CB4 /* AnswerNode.swift in Sources */,
 				CDFA156F19D69C5C00757CB4 /* ExpressionNode.swift in Sources */,
 				CDFA156D19D6863D00757CB4 /* Expression.swift in Sources */,
 				CDFA156719D537C400757CB4 /* Fraction.swift in Sources */,

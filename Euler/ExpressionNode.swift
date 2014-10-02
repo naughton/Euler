@@ -24,7 +24,9 @@ class ExpressionNode : SKNode
         opLabel.text = String(expression.op.toRaw())
 
         leftNode = FractionNode(fraction: expression.left)
+        leftNode.proper = true
         rightNode = FractionNode(fraction: expression.right)
+        rightNode.proper = true
         opLabel.fontSize = rightNode.fontSize
         opLabel.fontColor = rightNode.color
 
